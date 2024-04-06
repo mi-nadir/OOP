@@ -36,11 +36,20 @@ public class Main {
         System.out.println(myBox.volume());
         System.out.println(myBox2.volume());
 
+        //////////////////////////////
+
         Dog dog1 = new Dog();
         dog1.speed = 5;
         dog1.breed = "Кавказская";
         dog1.name = "Щарик";
         System.out.println(dog1.info());
         dog1.run();
+
+        //////////////////////////////
+
+        Rect rect = new Rect();
+        rect.setInfo(22, 23);
+        System.out.println(rect.perimeter());
+        System.out.println(rect.square());
     }
 }
