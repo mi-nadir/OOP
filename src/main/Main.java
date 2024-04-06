@@ -1,33 +1,36 @@
+package main;
+import test.*;
+
 public class Main {
     public static void main(String[] args) {
         Box myBox = new Box();
-        myBox.height = 10.2;
-        myBox.length = 8.1;
-        myBox.width = 3.4;
+        myBox.setHeight(10.2);
+        myBox.setLength(8.1);
+        myBox.setWidth(3.4);
 
         Box myBox2 = new Box();
-        myBox2.height = 5;
-        myBox2.length = 5;
-        myBox2.width = 5;
-        double volume = myBox.height * myBox.length * myBox.width;
-        System.out.println(volume);
+        myBox2.setHeight(5);
+        myBox2.setLength(5);
+        myBox2.setWidth(5);
+        double volume = myBox.getHeight() * myBox.getLength() * myBox.getWidth();
+        System.out.println("myBox: "+volume);
 
-        double volume2 = myBox2.height * myBox2.length * myBox2.width;
-        System.out.println(volume2);
+        double volume2 = myBox2.getHeight() * myBox2.getLength() * myBox2.getWidth();
+        System.out.println("myBox2: "+volume2);
 
         //////////////////////////////////
 
         Human Andrey = new Human();
         Human Maxim = new Human();
-        Andrey.age = 34;
-        Andrey.name = "Andrey";
-        Andrey.weight = 80;
+        Andrey.setAge(34);
+        Andrey.setName("Andrey");
+        Andrey.setWeight(80);
 
-        Maxim.age = 24;
-        Maxim.name = "Maxim";
-        Maxim.weight = 90;
+        Maxim.setAge(24);
+        Maxim.setName("Maxim");
+        Maxim.setWeight(90);
 
-        float avgAge = (float) (Andrey.age + Maxim.age) / 2;
+        float avgAge = (float) (Andrey.getAge() + Maxim.getAge()) / 2;
         System.out.println(avgAge);
 
         //////////////////////////////
@@ -39,9 +42,9 @@ public class Main {
         //////////////////////////////
 
         Dog dog1 = new Dog();
-        dog1.speed = 5;
-        dog1.breed = "Кавказская";
-        dog1.name = "Щарик";
+        dog1.setSpeed(5);
+        dog1.setBreed("Кавказская");
+        dog1.setName("Шарик");
         System.out.println(dog1.info());
         dog1.run();
 

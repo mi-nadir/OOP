@@ -1,15 +1,17 @@
-public class Rect {
-    int width;
-    int height;
+package test;
 
-    void setInfo(int width, int height) {
+public class Rect {
+    private int width;
+    private int height;
+
+    public void setInfo(int width, int height) {
         this.height = height;
         this.width = width;
     }
-    int perimeter() {
+    public int perimeter() {
         return (this.height + this.width)*2;
     }
-    int square() {
+    public int square() {
         return this.width * this.height;
     }
 }
