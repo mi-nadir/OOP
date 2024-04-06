@@ -1,6 +1,8 @@
 package main;
 import test.*;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         Box myBox = new Box();
@@ -81,5 +83,36 @@ public class Main {
         System.out.println(man.getName());
         System.out.println(man.getPost());
         System.out.println(man.getHeight());
+        //////////////////////////////////
+        ArrayList<Integer> listNum = new ArrayList<>();
+        ArrayList<String> listStr = new ArrayList<>();
+        ArrayList<String> listNew = new ArrayList<>();
+        listNum.add(454);
+        listNum.add(45);
+        listNum.add(65);
+        listNum.add(78);
+        listNum.add(54);
+        listNum.add(32);
+        listNum.add(75);
+        listNum.add(70);
+        listNum.add(44);
+        listNum.add(54);
+        listStr.add("Name 1");
+        listStr.add("Name 2");
+        listStr.add("Name 3");
+        listStr.add("Name 4");
+        listStr.add("Name 5");
+        listStr.add("Name 6");
+        listStr.add("Name 7");
+        listStr.add("Name 8");
+        listStr.add("Name 9");
+        listStr.add("Name 10");
+
+        for (int i=0; i<listNum.size();i++) {
+            listNew.add(listNum.get(i) +" - "+listStr.get(i));
+        }
+        for(String str: listNew) {
+            System.out.println(str);
+        }
     }
 }
