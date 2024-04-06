@@ -55,5 +55,9 @@ public class Main {
         //////////////////////////////
         Worker worker = new Worker("Иван", "Механик", 55000);
         System.out.println(worker.showInfo(10));
+
+        //////////////////////////////
+        Monster monster = new Monster(1,3,5);
+        monster.voice(5, "gaga");
     }
 }
