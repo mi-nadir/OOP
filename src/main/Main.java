@@ -69,5 +69,17 @@ public class Main {
         myBox4.showVolume();
         Box myBox5 = new Box(myBox3, myBox4);
         myBox5.showVolume();
+
+        //////////////////////////////////
+        String parseText = "Это Иван, ему 34 года, его рост 166.3 см. Должность - программист.";
+        String manName = parseText.substring(4, 8);
+        int manAge = Integer.parseInt(parseText.substring(14,16));
+        double manHeight = Double.parseDouble(parseText.substring(32,37));
+        String manPost = parseText.substring(54,65);
+        Man man = new Man(manName, manPost, manAge, manHeight);
+        System.out.println(man.getAge());
+        System.out.println(man.getName());
+        System.out.println(man.getPost());
+        System.out.println(man.getHeight());
     }
 }
