@@ -15,6 +15,8 @@ public class Main {
         double volume2 = myBox2.height * myBox2.length * myBox2.width;
         System.out.println(volume2);
 
+        //////////////////////////////////
+
         Human Andrey = new Human();
         Human Maxim = new Human();
         Andrey.age = 34;
@@ -27,5 +29,18 @@ public class Main {
 
         float avgAge = (float) (Andrey.age + Maxim.age) / 2;
         System.out.println(avgAge);
+
+        //////////////////////////////
+        myBox.showVolume();
+        myBox2.showVolume();
+        System.out.println(myBox.volume());
+        System.out.println(myBox2.volume());
+
+        Dog dog1 = new Dog();
+        dog1.speed = 5;
+        dog1.breed = "Кавказская";
+        dog1.name = "Щарик";
+        System.out.println(dog1.info());
+        dog1.run();
     }
 }
