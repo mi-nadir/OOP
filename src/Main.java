@@ -59,5 +59,12 @@ public class Main {
         //////////////////////////////
         Monster monster = new Monster(1,3,5);
         monster.voice(5, "gaga");
+
+        /////////////////////////////////
+        Box myBox3 = new Box(1,2,3);
+        Box myBox4 = myBox3.newBox(myBox2);
+        myBox4.showVolume();
+        Box myBox5 = new Box(myBox3, myBox4);
+        myBox5.showVolume();
     }
 }
