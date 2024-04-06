@@ -51,5 +51,9 @@ public class Main {
         rect.setInfo(22, 23);
         System.out.println(rect.perimeter());
         System.out.println(rect.square());
+
+        //////////////////////////////
+        Worker worker = new Worker("Иван", "Механик", 55000);
+        System.out.println(worker.showInfo(10));
     }
 }
